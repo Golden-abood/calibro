@@ -1,0 +1,10 @@
+=> screenshots to all sections : DONE 
+=> download photos : DONE 
+=> logo download : DONE 
+=> clone project : done 
+=> connect with repository : 
+=> make "LEGACY" brunch containe old project 
+=> make brunch to new ui project 
+=> repier old ui 
+=> update nuxt project 
+=> update ui website 

@@ -1,0 +1,49 @@
+// customer life-cycle arrows
+.arrow {
+  img {
+    transition: filter 0.3s ease-in-out;
+  }
+
+  &-hover img {
+    filter: drop-shadow(5px 5px 5px #f0be3e);
+  }
+}
+.arrow-top {
+  width: 175px;
+  top: -70%;
+  left: 70%;
+}
+
+.arrow-bottom {
+  left: 50%;
+  top: 110%;
+  width: 50px;
+}
+
+.arrow-left {
+  right: 100%;
+  top: 10%;
+}
+
+.arrow-right {
+  left: 100%;
+  top: 70%;
+}
+
+.arrow-bottom-left {
+  width: 150px;
+  left: -20%;
+}
+
+// we use the bottom-left image and rotate it
+.arrow-bottom-right {
+  width: 150px;
+  right: -20%;
+}
+
+// hide arrows on small screen
+@media (max-width: 766px) {
+  .arrow {
+    display: none;
+  }
+}

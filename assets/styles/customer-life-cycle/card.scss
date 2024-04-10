@@ -1,0 +1,50 @@
+// customer life-cycle card
+.card {
+  position: relative;
+  transform-style: preserve-3d;
+  background: #e58b24;
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  transform: rotateX(55deg) rotateZ(45deg);
+  transition: box-shadow 0.3s ease-in-out;
+  cursor: cell;
+
+  &-hover {
+    box-shadow: 0 0 150px #e58a24;
+  }
+}
+
+.first-side {
+  position: absolute;
+  background: linear-gradient(#e58a24, #f0be3e);
+  width: 24px;
+  top: 11px;
+  height: 100%;
+  right: -22px;
+  transform: skewY(45deg);
+}
+
+.second-side {
+  position: absolute;
+  background: linear-gradient(to right, #e58a24, #d35706);
+  width: 100%;
+  bottom: -22px;
+  right: -11px;
+  height: 24px;
+  transform: skewX(45deg);
+}
+
+.content {
+  font-size: 20px;
+  line-height: 1.5;
+  text-shadow: 1px 1px 10px #00000063;
+}
+
+.card-number {
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 16px;
+}

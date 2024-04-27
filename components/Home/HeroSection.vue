@@ -1,11 +1,11 @@
 <template>
   <canvas
     id="animation_bg"
-    class="absolute bg-black opacity-50 w-full h-full"
+    class="absolute w-full h-full bg-black opacity-50"
   />
 
-  <div class="hero py-20">
-    <div class="container lg:flex lg:justify-between items-center">
+  <div class="py-20 hero">
+    <div class="container items-center lg:flex lg:justify-between">
       <div class="lg:max-w-[60%] text-center lg:text-start lg:pt-16">
         <div class="pt-20 md:pt-0">
           <BaseTitle
@@ -35,17 +35,17 @@
       -->
       <!--before:absolute before:bg-[#EC201B] before:lg:blur-[400px] before:rounded-[371px] before:lg:top-0 before:left-0 before:w-full before:blur-[220px] before:h-[370px] before:lg:h-[200%] before:top-0-->
       <div
-        class="flex-col justify-center items-center lg:mr-20 relative mt-16 lg:mt-0 gradient"
+        class="relative flex-col items-center justify-center mt-16 lg:mr-20 lg:mt-0 gradient"
       >
         <NuxtImg
           width="250"
-          class="mx-auto relative z-3 -mb-36 animate-move"
+          class="relative mx-auto z-3 -mb-36 animate-move"
           src="/images/arrow-up.png"
         />
 
         <NuxtImg
           width="220"
-          class="mx-auto -mb-12 relative z-10"
+          class="relative z-10 mx-auto -mb-12"
           src="/images/brain-2.png"
         />
         <NuxtImg
@@ -107,7 +107,12 @@ useHead({
   filter: blur(300px);
   border-radius: 1100px;
 }
-
+@media (max-width: 600px) {
+  .gradient::before {
+    width: 0;
+    height: 400px;
+  }
+}
 @media (max-width: 1200px) {
   .gradient::before {
     filter: blur(350px);

@@ -1,40 +1,40 @@
 <template>
   <div
-    class="mobile-nav fixed flex-col items-center top-0 left-0 w-screen h-screen z-30 overflow-hidden"
+    class="fixed top-0 left-0 z-30 flex-col items-center w-screen h-screen overflow-hidden mobile-nav"
   >
     <div class="block my-24" @click="pushRouter('/')">
       <img class="mx-auto cursor-pointer" src="/images/logo.png" alt="" />
     </div>
 
-    <div class="flex flex-col gap-y-10 justify-center items-center">
+    <div class="flex flex-col items-center justify-center gap-y-10">
       <div
-        class="cursor-pointer text-white font-bold text-3xl opacity-0 nav-link-1"
+        class="text-3xl font-bold text-white opacity-0 cursor-pointer nav-link-1"
         @click="pushRouter('Product')"
       >
         Product
       </div>
 
       <div
-        class="cursor-pointer text-white font-bold text-3xl opacity-0 nav-link-2"
+        class="text-3xl font-bold text-white opacity-0 cursor-pointer nav-link-2"
         @click="pushRouter('Pricing')"
       >
         Pricing
       </div>
 
       <div
-        class="cursor-pointer text-white font-bold text-3xl opacity-0 nav-link-3"
-        @click="pushRouter('AboutUs')"
+        class="text-3xl font-bold text-white opacity-0 cursor-pointer nav-link-3"
+        @click="pushRouter('about-us')"
       >
         About Us
       </div>
       <div
-        class="cursor-pointer text-white font-bold text-3xl opacity-0 nav-link-4"
+        class="text-3xl font-bold text-white opacity-0 cursor-pointer nav-link-4"
         @click="pushRouter('FAQ')"
       >
         FAQ
       </div>
       <div
-        class="cursor-pointer text-white font-bold text-3xl opacity-0 nav-link-5"
+        class="text-3xl font-bold text-white opacity-0 cursor-pointer nav-link-5"
         @click="pushRouter('Contact')"
       >
         Contact

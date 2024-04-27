@@ -1,21 +1,21 @@
 <template>
-  <div class="bg-black pb-40 overflow-hidden">
+  <div class="pb-40 overflow-hidden bg-black">
     <div class="container min-h-screen">
       <div class="mx-auto text-center pt-36 md:max-w-[60%]">
         <BaseTitle
           title="Subscribe to Avail Advance Features"
-          class="text-4xl md:text-6xl mx-auto"
+          class="mx-auto text-4xl md:text-6xl"
         />
         <BaseParagraphText
           text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr.Lorem ipsum dolor sit amet, consetetur sadi"
-          class="text-md md:text-lg pt-6 s mx-auto"
+          class="pt-6 mx-auto text-md md:text-lg s"
         />
 
         <!--
         <PricingToggler @change-price="changePrice" />
       </div>
       <div
-        class="grid grid-cols-1 gap-x-6 md:grid-cols-2 lg:grid-cols-3 mt-12 gap-y-10"
+        class="grid grid-cols-1 mt-12 gap-x-6 md:grid-cols-2 lg:grid-cols-3 gap-y-10"
       >
         <PricingCard
           v-for="(card, index) in cards"
@@ -27,10 +27,10 @@
         -->
         <!--radi after:absolute after:top-0 after:-left-20 after:w-[400px] after:h-[300px] after:rounded-[588.053px] after:rotate-[90deg] after:opacity-50 after:blur-[350px] after:z-30-->
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-x-8 mt-16">
+      <div class="grid grid-cols-1 mt-16 md:grid-cols-3 gap-x-8">
         <PricingNewCard :card="cards[1]" class="col-span-2 back-gradi" />
-        <div class="col-span-1">
-          <BaseTitle title="Need Something Different?" class="text-4xl my-3" />
+        <div class="col-span-1 mt-20">
+          <BaseTitle title="Need Something Different?" class="my-3 text-4xl" />
           <BaseParagraphText text="Get in touch" class="mt-6 mb-3" />
           <BaseButton
             text="Let us Know"
